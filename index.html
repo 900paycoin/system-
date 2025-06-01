@@ -1,0 +1,583 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+
+    <meta name="csrf-token" content="AKa1axr9y5S1upk3JC8EDziPOfox5ixCpdiFaFze">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pointcom</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>[x-cloak] {
+            display: none !important;
+        }</style>
+    <link rel="preload" as="style" href="css/app-6b3e1b5c.css"><link rel="preload" as="style" href="css/theme-700a3e08.css"><link rel="stylesheet" href="css/app-6b3e1b5c.css" data-navigate-track="reload"><link rel="stylesheet" href="css/theme-700a3e08.css" data-navigate-track="reload">    <!-- Livewire Styles --><style>[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #fa8200;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}</style>
+    <link href="css/filament-slim-scrollbar.css" rel="stylesheet" data-navigate-track="">
+                    <link href="css/forms.css" rel="stylesheet" data-navigate-track="">
+                <link href="css/support.css" rel="stylesheet" data-navigate-track="">
+    
+<style>
+    :root {
+         --danger-50:254, 242, 242;  --danger-100:254, 226, 226;  --danger-200:254, 202, 202;  --danger-300:252, 165, 165;  --danger-400:248, 113, 113;  --danger-500:239, 68, 68;  --danger-600:220, 38, 38;  --danger-700:185, 28, 28;  --danger-800:153, 27, 27;  --danger-900:127, 29, 29;  --danger-950:69, 10, 10;  --gray-50:250, 250, 250;  --gray-100:244, 244, 245;  --gray-200:228, 228, 231;  --gray-300:212, 212, 216;  --gray-400:161, 161, 170;  --gray-500:113, 113, 122;  --gray-600:82, 82, 91;  --gray-700:63, 63, 70;  --gray-800:39, 39, 42;  --gray-900:24, 24, 27;  --gray-950:9, 9, 11;  --info-50:239, 246, 255;  --info-100:219, 234, 254;  --info-200:191, 219, 254;  --info-300:147, 197, 253;  --info-400:96, 165, 250;  --info-500:59, 130, 246;  --info-600:37, 99, 235;  --info-700:29, 78, 216;  --info-800:30, 64, 175;  --info-900:30, 58, 138;  --info-950:23, 37, 84;  --primary-50:255, 249, 242;  --primary-100:255, 243, 230;  --primary-200:254, 224, 191;  --primary-300:253, 205, 153;  --primary-400:252, 168, 77;  --primary-500:250, 130, 0;  --primary-600:225, 117, 0;  --primary-700:188, 98, 0;  --primary-800:150, 78, 0;  --primary-900:123, 64, 0;  --primary-950:75, 39, 0;  --success-50:240, 253, 244;  --success-100:220, 252, 231;  --success-200:187, 247, 208;  --success-300:134, 239, 172;  --success-400:74, 222, 128;  --success-500:34, 197, 94;  --success-600:22, 163, 74;  --success-700:21, 128, 61;  --success-800:22, 101, 52;  --success-900:20, 83, 45;  --success-950:5, 46, 22;  --warning-50:255, 251, 235;  --warning-100:254, 243, 199;  --warning-200:253, 230, 138;  --warning-300:252, 211, 77;  --warning-400:251, 191, 36;  --warning-500:245, 158, 11;  --warning-600:217, 119, 6;  --warning-700:180, 83, 9;  --warning-800:146, 64, 14;  --warning-900:120, 53, 15;  --warning-950:69, 26, 3;  --secondary-50:255, 249, 242;  --secondary-100:255, 243, 230;  --secondary-200:254, 224, 191;  --secondary-300:253, 205, 153;  --secondary-400:252, 168, 77;  --secondary-500:250, 130, 0;  --secondary-600:225, 117, 0;  --secondary-700:188, 98, 0;  --secondary-800:150, 78, 0;  --secondary-900:123, 64, 0;  --secondary-950:75, 39, 0;     }
+</style>
+    </head>
+
+<body class="antialiased">
+<div wire:snapshot="{" data":{"data":[{"username":null,"password":null,"remember":false},{"s":"arr"}],"supportnumber":"+256790161683","ipaddress":"","router":"","mountedactions":[[],{"s":"arr"}],"mountedactionsarguments":[[],{"s":"arr"}],"mountedactionsdata":[[],{"s":"arr"}],"defaultaction":null,"defaultactionarguments":null,"componentfileattachments":[[],{"s":"arr"}],"mountedformcomponentactions":[[],{"s":"arr"}],"mountedformcomponentactionsarguments":[[],{"s":"arr"}],"mountedformcomponentactionsdata":[[],{"s":"arr"}],"mountedformcomponentactionscomponents":[[],{"s":"arr"}],"mountedinfolistactions":[[],{"s":"arr"}],"mountedinfolistactionsdata":[[],{"s":"arr"}],"mountedinfolistactionscomponent":null,"mountedinfolistactionsinfolist":null},"memo":{"id":"o4eltyr4cdkffjrna0bw","name":"app.http.livewire.auth.login","path":"login","method":"get","children":[],"scripts":[],"assets":[],"errors":[],"locale":"en"},"checksum":"93dd91217c123378a11e8dbcb04dc4122714e1b31a311a49049abf0651fa9e35"}"="" wire:effects="{" url":{"defaultaction":{"as":"action","use":"replace","alwaysshow":false,"except":null},"defaultactionarguments":{"as":"actionarguments","use":"replace","alwaysshow":false,"except":null}}}"="" wire:id="O4ELTyr4CDkFfJrnA0bw" class="page-container">
+    <link rel="stylesheet" href="css/account-creation.css">
+    <link rel="stylesheet" href="css/form.css">
+    <style>
+        :root {
+            --primary-color: #fa8200;
+            --success-color: #fa8200;
+        }
+
+        .page-container {
+            background: radial-gradient(circle at top right, rgba(5, 150, 105, 0.05) 0%, transparent 70%),
+            radial-gradient(circle at bottom left, rgba(5, 150, 105, 0.05) 0%, transparent 70%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-6);
+            margin-bottom: 0;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: var(--space-16);
+            align-items: center;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .form-section {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03),
+            0 10px 15px -3px rgba(0, 0, 0, 0.03),
+            0 30px 50px -20px rgba(0, 0, 0, 0.06);
+            padding: 2.5rem 3rem;
+            width: 100%;
+            max-width: 36rem;
+            position: relative;
+            isolation: isolate;
+            overflow: visible;
+            border: 1px solid rgba(226, 232, 240, 0.6);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 3%;
+        }
+
+        .form-section:hover {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+            0 10px 15px -3px rgba(0, 0, 0, 0.05),
+            0 30px 50px -20px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .mobile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .form-section {
+                min-height: unset;
+            }
+        }
+
+        .mobile-header .logo {
+            height: 3.5rem;
+            margin-bottom: 1.25rem;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-header .title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            position: relative;
+            letter-spacing: -0.025em;
+        }
+
+        .mobile-header .title::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3rem;
+            height: 0.25rem;
+            background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+            border-radius: 4px;
+        }
+
+        .mobile-header .description {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-card {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            border-color: var(--primary-color);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .mobile-value-prop {
+            margin-top: 2.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(to right, rgba(5, 150, 105, 0.05), rgba(16, 185, 129, 0.05));
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+        }
+
+        .mobile-value-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .mobile-value-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Custom form styling */
+        :is(.fi-input-wrp) input {
+            border-radius: 0.75rem;
+            padding: 0.55rem 1rem;
+            border-color: var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        :is(.fi-input-wrp) input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.1);
+        }
+
+        :is(.fi-btn) {
+            border-radius: 0.75rem;
+            padding: 0.6rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        :is(.fi-btn-primary) {
+            background-color: var(--primary-color);
+            box-shadow: 0 1px 2px 0 rgba(5, 150, 105, 0.05);
+        }
+
+        :is(.fi-btn-primary):hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.1),
+            0 2px 4px -1px rgba(5, 150, 105, 0.06);
+        }
+
+        @media (max-width: 768px) {
+            .form-section {
+                padding: 2rem;
+                margin-top: 0;
+            }
+
+            .mobile-header .logo {
+                height: 3rem;
+            }
+
+            .mobile-header .title {
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .page-container {
+                padding: var(--space-4);
+            }
+
+            .form-section {
+                padding: 1.5rem;
+                border-radius: 16px;
+            }
+
+            .mobile-header .logo {
+                height: 2.5rem;
+            }
+
+            .mobile-value-prop {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+    <div class="content-wrapper">
+        <!-- Form Section -->
+        <div class="form-section">
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                                    <h1 class="title">POINT COM</h1>
+                                <p class="description">Welcome back! Log in to your account</p>
+            </div>
+
+            <div class="form-card">
+                                    <div class="text-center mb-4">
+                        or
+                        <!--[if BLOCK]><![endif]-->    <a href="https://pointcom.centipidtechnologies.com/register" wire:navigate="" class="fi-link group/link relative inline-flex items-center justify-center outline-none fi-size-md fi-link-size-md gap-1.5 fi-color-custom fi-color-primary fi-ac-action fi-ac-link-action">
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+        <span class="font-semibold text-sm text-custom-600 dark:text-custom-400 group-hover/link:underline group-focus-visible/link:underline" style="--c-400:var(--primary-400);--c-600:var(--primary-600);">
+            sign up for an account
+        </span>
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+    </a><!--[if ENDBLOCK]><![endif]-->
+
+                    </div>
+                
+                <form method="post" x-data="{ isProcessing: false }" x-on:submit="if (isProcessing) $event.preventDefault()" x-on:form-processing-started="isProcessing = true" x-on:form-processing-finished="isProcessing = false" class="fi-form grid gap-y-6" wire:submit="login">
+    <div style="--cols-default: repeat(1, minmax(0, 1fr));" class="grid grid-cols-[--cols-default] fi-fo-component-ctn gap-6" x-data="{}" x-on:form-validation-error.window="if ($event.detail.livewireId !== 'O4ELTyr4CDkFfJrnA0bw') {
+                return
+            }
+
+            $nextTick(() => {
+                let error = $el.querySelector('[data-validation-error]')
+
+                if (! error) {
+                    return
+                }
+
+                let elementToExpand = error
+
+                while (elementToExpand) {
+                    elementToExpand.dispatchEvent(new CustomEvent('expand'))
+
+                    elementToExpand = elementToExpand.parentNode
+                }
+
+                setTimeout(
+                    () =>
+                        error.closest('[data-field-wrapper]').scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                            inline: 'start',
+                        }),
+                    200,
+                )
+        })">
+    <!--[if BLOCK]><![endif]-->        
+        <div style="--col-span-default: span 1 / span 1;" class="col-[--col-span-default]" wire:key="O4ELTyr4CDkFfJrnA0bw.data.username.Filament\Forms\Components\TextInput">
+    <!--[if BLOCK]><![endif]-->                <div data-field-wrapper="" class="fi-fo-field-wrp">
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+    <div class="grid gap-y-2">
+        <!--[if BLOCK]><![endif]-->            <div class="flex items-center gap-x-3 justify-between ">
+                <!--[if BLOCK]><![endif]-->                    <label class="fi-fo-field-wrp-label inline-flex items-center gap-x-3" for="data.username">
+    
+
+    <span class="text-sm font-medium leading-6 text-gray-950 dark:text-white">
+        
+        Username<!--[if BLOCK]><![endif]--><sup class="text-danger-600 dark:text-danger-400 font-medium">*</sup>
+        <!--[if ENDBLOCK]><![endif]-->
+    </span>
+
+    
+</label>
+                <!--[if ENDBLOCK]><![endif]-->
+
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]-->            <div class="grid auto-cols-fr gap-y-2">
+                <div class="fi-input-wrp flex rounded-lg shadow-sm ring-1 transition duration-75 bg-white dark:bg-white/5 [&:not(:has(.fi-ac-action:focus))]:focus-within:ring-2 ring-gray-950/10 dark:ring-white/20 [&:not(:has(.fi-ac-action:focus))]:focus-within:ring-primary-600 dark:[&:not(:has(.fi-ac-action:focus))]:focus-within:ring-primary-500 fi-fo-text-input overflow-hidden">
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+    <div class="fi-input-wrp-input min-w-0 flex-1">
+        <input class="fi-input block w-full border-none py-1.5 text-base text-gray-950 transition duration-75 placeholder:text-gray-400 focus:ring-0 disabled:text-gray-500 disabled:[-webkit-text-fill-color:theme(colors.gray.500)] disabled:placeholder:[-webkit-text-fill-color:theme(colors.gray.400)] dark:text-white dark:placeholder:text-gray-500 dark:disabled:text-gray-400 dark:disabled:[-webkit-text-fill-color:theme(colors.gray.400)] dark:disabled:placeholder:[-webkit-text-fill-color:theme(colors.gray.500)] sm:text-sm sm:leading-6 bg-white/0 ps-3 pe-3" autocomplete="current-username" autofocus="autofocus" id="data.username" required="required" type="text" wire:model="data.username">
+    </div>
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+</div>
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+    </div>
+</div>
+
+            <!--[if ENDBLOCK]><![endif]-->
+</div>
+            
+        <div style="--col-span-default: span 1 / span 1;" class="col-[--col-span-default]" wire:key="O4ELTyr4CDkFfJrnA0bw.data.password.Filament\Forms\Components\TextInput">
+    <!--[if BLOCK]><![endif]-->                <div data-field-wrapper="" class="fi-fo-field-wrp">
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+    <div class="grid gap-y-2">
+        <!--[if BLOCK]><![endif]-->            <div class="flex items-center gap-x-3 justify-between ">
+                <!--[if BLOCK]><![endif]-->                    <label class="fi-fo-field-wrp-label inline-flex items-center gap-x-3" for="data.password">
+    
+
+    <span class="text-sm font-medium leading-6 text-gray-950 dark:text-white">
+        
+        Password<!--[if BLOCK]><![endif]--><sup class="text-danger-600 dark:text-danger-400 font-medium">*</sup>
+        <!--[if ENDBLOCK]><![endif]-->
+    </span>
+
+    
+</label>
+                <!--[if ENDBLOCK]><![endif]-->
+
+                <!--[if BLOCK]><![endif]-->                    <div class="fi-fo-field-wrp-hint flex items-center gap-x-3 text-sm">
+    <!--[if BLOCK]><![endif]-->        <span class="fi-fo-field-wrp-hint-label text-gray-500 fi-color-gray" style="--c-400:var(--gray-400);--c-600:var(--gray-600);">
+            <!--[if BLOCK]><![endif]-->    <a href="https://pointcom.centipidtechnologies.com/password-reset/request" wire:navigate="" class="fi-link group/link relative inline-flex items-center justify-center outline-none fi-size-md fi-link-size-md gap-1.5 fi-color-custom fi-color-primary">
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+        <span class="font-semibold text-sm text-custom-600 dark:text-custom-400 group-hover/link:underline group-focus-visible/link:underline" style="--c-400:var(--primary-400);--c-600:var(--primary-600);">
+            Forgot password?
+        </span>
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+    </a><!--[if ENDBLOCK]><![endif]-->
+        </span>
+    <!--[if ENDBLOCK]><![endif]-->
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+</div>
+                <!--[if ENDBLOCK]><![endif]-->
+            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]-->            <div class="grid auto-cols-fr gap-y-2">
+                <div class="fi-input-wrp flex rounded-lg shadow-sm ring-1 transition duration-75 bg-white dark:bg-white/5 [&:not(:has(.fi-ac-action:focus))]:focus-within:ring-2 ring-gray-950/10 dark:ring-white/20 [&:not(:has(.fi-ac-action:focus))]:focus-within:ring-primary-600 dark:[&:not(:has(.fi-ac-action:focus))]:focus-within:ring-primary-500 fi-fo-text-input overflow-hidden" x-data="{ isPasswordRevealed: false }">
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+    <div class="fi-input-wrp-input min-w-0 flex-1">
+        <input class="fi-input block w-full border-none py-1.5 text-base text-gray-950 transition duration-75 placeholder:text-gray-400 focus:ring-0 disabled:text-gray-500 disabled:[-webkit-text-fill-color:theme(colors.gray.500)] disabled:placeholder:[-webkit-text-fill-color:theme(colors.gray.400)] dark:text-white dark:placeholder:text-gray-500 dark:disabled:text-gray-400 dark:disabled:[-webkit-text-fill-color:theme(colors.gray.400)] dark:disabled:placeholder:[-webkit-text-fill-color:theme(colors.gray.500)] sm:text-sm sm:leading-6 bg-white/0 ps-3 pe-3 [&::-ms-reveal]:hidden" autocomplete="current-password" id="data.password" required="required" wire:model="data.password" x-bind:type="isPasswordRevealed ? 'text' : 'password'">
+    </div>
+
+    <!--[if BLOCK]><![endif]-->        <div class="fi-input-wrp-suffix flex items-center gap-x-3 pe-3 border-s border-gray-200 ps-3 dark:border-white/10">
+            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+            <!--[if BLOCK]><![endif]-->                <div class="flex items-center gap-3">
+                    <!--[if BLOCK]><![endif]-->                        <!--[if BLOCK]><![endif]-->    <button style="--c-300:var(--gray-300);--c-400:var(--gray-400);--c-500:var(--gray-500);--c-600:var(--gray-600);" class="fi-icon-btn relative flex items-center justify-center rounded-lg outline-none transition duration-75 focus-visible:ring-2 -m-1.5 h-8 w-8 text-gray-400 hover:text-gray-500 focus-visible:ring-primary-600 dark:text-gray-500 dark:hover:text-gray-400 dark:focus-visible:ring-primary-500 fi-color-gray fi-ac-action fi-ac-icon-btn-action" title="Show password" type="button" wire:loading.attr="disabled" x-on:click="isPasswordRevealed = true" x-show="! isPasswordRevealed">
+        <!--[if BLOCK]><![endif]-->            <span class="sr-only">
+                Show password
+            </span>
+        <!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]-->    <svg width="5" height="5" class="stroke-1 fi-icon-btn-icon h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path></svg><!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+    </button>
+<!--[if ENDBLOCK]><![endif]-->
+
+                                            <!--[if BLOCK]><![endif]-->    <button style="--c-300:var(--gray-300);--c-400:var(--gray-400);--c-500:var(--gray-500);--c-600:var(--gray-600);" class="fi-icon-btn relative flex items-center justify-center rounded-lg outline-none transition duration-75 focus-visible:ring-2 -m-1.5 h-8 w-8 text-gray-400 hover:text-gray-500 focus-visible:ring-primary-600 dark:text-gray-500 dark:hover:text-gray-400 dark:focus-visible:ring-primary-500 fi-color-gray fi-ac-action fi-ac-icon-btn-action" title="Hide password" type="button" wire:loading.attr="disabled" x-on:click="isPasswordRevealed = false" x-cloak="x-cloak" x-show="isPasswordRevealed">
+        <!--[if BLOCK]><![endif]-->            <span class="sr-only">
+                Hide password
+            </span>
+        <!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]-->    <svg width="5" height="5" class="stroke-1 fi-icon-btn-icon h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M53.92,34.62A8,8,0,1,0,42.08,45.38L61.32,66.55C25,88.84,9.38,123.2,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208a127.11,127.11,0,0,0,52.07-10.83l22,24.21a8,8,0,1,0,11.84-10.76Zm47.33,75.84,41.67,45.85a32,32,0,0,1-41.67-45.85ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.16,133.16,0,0,1,25,128c4.69-8.79,19.66-33.39,47.35-49.38l18,19.75a48,48,0,0,0,63.66,70l14.73,16.2A112,112,0,0,1,128,192Zm6-95.43a8,8,0,0,1,3-15.72,48.16,48.16,0,0,1,38.77,42.64,8,8,0,0,1-7.22,8.71,6.39,6.39,0,0,1-.75,0,8,8,0,0,1-8-7.26A32.09,32.09,0,0,0,134,96.57Zm113.28,34.69c-.42.94-10.55,23.37-33.36,43.8a8,8,0,1,1-10.67-11.92A132.77,132.77,0,0,0,231.05,128a133.15,133.15,0,0,0-23.12-30.77C185.67,75.19,158.78,64,128,64a118.37,118.37,0,0,0-19.36,1.57A8,8,0,1,1,106,49.79,134,134,0,0,1,128,48c34.88,0,66.57,13.26,91.66,38.35,18.83,18.83,27.3,37.62,27.65,38.41A8,8,0,0,1,247.31,131.26Z"></path></svg><!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+    </button>
+<!--[if ENDBLOCK]><![endif]-->
+
+                    <!--[if ENDBLOCK]><![endif]-->
+                </div>
+            <!--[if ENDBLOCK]><![endif]-->
+        </div>
+    <!--[if ENDBLOCK]><![endif]-->
+</div>
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+    </div>
+</div>
+
+            <!--[if ENDBLOCK]><![endif]-->
+</div>
+            
+        <div style="--col-span-default: span 1 / span 1;" class="col-[--col-span-default]" wire:key="O4ELTyr4CDkFfJrnA0bw.data.remember.Filament\Forms\Components\Checkbox">
+    <!--[if BLOCK]><![endif]-->                <div data-field-wrapper="" class="fi-fo-field-wrp">
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+    <div class="grid gap-y-2">
+        <!--[if BLOCK]><![endif]-->            <div class="flex items-center gap-x-3 justify-between ">
+                <!--[if BLOCK]><![endif]-->                    <label class="fi-fo-field-wrp-label inline-flex items-center gap-x-3" for="data.remember">
+    <input type="checkbox" class="fi-checkbox-input rounded border-none bg-white shadow-sm ring-1 transition duration-75 checked:ring-0 focus:ring-2 focus:ring-offset-0 disabled:pointer-events-none disabled:bg-gray-50 disabled:text-gray-50 disabled:checked:bg-gray-400 disabled:checked:text-gray-400 dark:bg-white/5 dark:disabled:bg-transparent dark:disabled:checked:bg-gray-600 text-primary-600 ring-gray-950/10 focus:ring-primary-600 checked:focus:ring-primary-500/50 dark:text-primary-500 dark:ring-white/20 dark:checked:bg-primary-500 dark:focus:ring-primary-500 dark:checked:focus:ring-primary-400/50 dark:disabled:ring-white/10" id="data.remember" wire:loading.attr="disabled" wire:model="data.remember">
+
+    <span class="text-sm font-medium leading-6 text-gray-950 dark:text-white">
+        
+        Remember me<!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+    </span>
+
+    
+</label>
+                <!--[if ENDBLOCK]><![endif]-->
+
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+    </div>
+</div>
+
+            <!--[if ENDBLOCK]><![endif]-->
+</div>
+    <!--[if ENDBLOCK]><![endif]-->
+</div>
+
+
+                    <!--[if BLOCK]><![endif]-->    <div class="fi-form-actions">
+        <!--[if BLOCK]><![endif]-->    <div class="fi-ac gap-3 grid grid-cols-[repeat(auto-fit,minmax(0,1fr))]">
+        <!--[if BLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+<button x-data="{
+            form: null,
+            isProcessing: false,
+            processingMessage: null,
+        }" x-init="
+            form = $el.closest('form')
+
+            form?.addEventListener('form-processing-started', (event) => {
+                isProcessing = true
+                processingMessage = event.detail.message
+            })
+
+            form?.addEventListener('form-processing-finished', () => {
+                isProcessing = false
+            })
+        " x-bind:class="{ 'enabled:opacity-70 enabled:cursor-wait': isProcessing }" style="--c-400:var(--primary-400);--c-500:var(--primary-500);--c-600:var(--primary-600);" class="fi-btn relative grid-flow-col items-center justify-center font-semibold outline-none transition duration-75 focus-visible:ring-2 rounded-lg fi-color-custom fi-btn-color-primary fi-color-primary fi-size-md fi-btn-size-md gap-1.5 px-3 py-2 text-sm inline-grid shadow-sm bg-custom-600 text-white hover:bg-custom-500 focus-visible:ring-custom-500/50 dark:bg-custom-500 dark:hover:bg-custom-400 dark:focus-visible:ring-custom-400/50 fi-ac-action fi-ac-btn-action" type="submit" wire:loading.attr="disabled" x-bind:disabled="isProcessing">
+    <!--[if BLOCK]><![endif]-->        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]-->            <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="animate-spin fi-btn-icon transition duration-75 h-5 w-5 text-white" wire:loading.delay.default="" wire:target="login">
+    <path clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill-rule="evenodd" fill="currentColor" opacity="0.2"></path>
+    <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"></path>
+</svg>
+        <!--[if ENDBLOCK]><![endif]-->
+
+        <!--[if BLOCK]><![endif]-->            <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="animate-spin fi-btn-icon transition duration-75 h-5 w-5 text-white" x-cloak="x-cloak" x-show="isProcessing">
+    <path clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill-rule="evenodd" fill="currentColor" opacity="0.2"></path>
+    <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"></path>
+</svg>
+        <!--[if ENDBLOCK]><![endif]-->
+    <!--[if ENDBLOCK]><![endif]-->
+
+    <span x-show="! isProcessing" class="fi-btn-label">
+        Login
+    </span>
+
+    <!--[if BLOCK]><![endif]-->        <span x-cloak="" x-show="isProcessing" x-text="processingMessage" class="fi-btn-label"></span>
+    <!--[if ENDBLOCK]><![endif]-->
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+</button>
+
+            <!--[if ENDBLOCK]><![endif]-->
+        <!--[if ENDBLOCK]><![endif]-->
+    </div>
+<!--[if ENDBLOCK]><![endif]-->
+    </div>
+<!--[if ENDBLOCK]><![endif]-->
+
+                                            <div class="text-center mx-auto mt-4">
+                            Need help? Contact support at <a class="footer-link" href="tel:+256790161683">+256790161683</a>
+                        </div>
+</form>
+            </div>
+
+            <!-- Footer -->
+                    </div>
+    </div>
+</div>
+<script>
+    window.addEventListener('alert', event => {
+        toastr[event.detail.type](event.detail.message,
+            event.detail.title ?? '')
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true,
+        }
+    })
+</script>
+<link rel="modulepreload" href="https://pointcom.centipidtechnologies.com/build/assets/app-a96026e6.js"><link rel="modulepreload" href="https://pointcom.centipidtechnologies.com/build/assets/axios-9cbf0d09.js"><script type="module" src="js/app-a96026e6.js" data-navigate-track="reload"></script><script src="js/livewire.min.js" data-csrf="AKa1axr9y5S1upk3JC8EDziPOfox5ixCpdiFaFze" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script>
+        window.filamentData = []    </script>
+
+            
+            <script src="js/notifications.js" data-navigate-once="" data-navigate-track=""></script>
+        
+                
+            <script src="js/support.js" data-navigate-once="" data-navigate-track=""></script>
+        
+    
+<style>
+    :root {
+            }
+</style>
+<div wire:snapshot="{" data":{"isfilamentnotificationscomponent":true,"notifications":[[],{"class":"filament\\notifications\\collection","s":"wrbl"}]},"memo":{"id":"2spjyi1odyfjj1luugmz","name":"filament.livewire.notifications","path":"login","method":"get","children":[],"scripts":[],"assets":[],"errors":[],"locale":"en"},"checksum":"5cc4aee30a00d29f3e4741611c75adbc4e8a78f9a12cc65beb53a96c372206d2"}"="" wire:effects="{" listeners":["notificationssent","notificationsent","notificationclosed"]}"="" wire:id="2sPjyI1ODYfJj1LUugmZ">
+    <div class="fi-no pointer-events-none fixed inset-4 z-50 mx-auto flex gap-3 items-end flex-col-reverse justify-end" role="status">
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+    </div>
+
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+</div>
+
+
+
+</body></html>
